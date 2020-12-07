@@ -1,3 +1,4 @@
+// import all dependencies + route files
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Nav from "./components/Nav";
@@ -5,7 +6,7 @@ import EmployeeTable from "./components/EmployeeTable";
 import SearchForm from "./components/SearchForm/SearchForm";
 import axios from "axios";
 import SortButtons from "./components/SortButtons/SortButtons";
-
+// set all variables for app
 function App() {
   const [search, setSearch] = useState("");
 
@@ -14,7 +15,7 @@ function App() {
   const [sortByLastName, setSortByLastName] = useState(false);
   const [sortByTitle, setSortByTitle] = useState(false);
 
-
+// pull from randomizer user api
   useEffect(() => {
     axios.get(`https://randomuser.me/api/?results=20`).then((response) => {
       setUsers(response.data.results);
@@ -26,7 +27,7 @@ function App() {
     setFilteredUsers(event.target.value);
 
   };
-
+// sort all users
 let allUsers = users
 
 if (filteredUsers != null) {
