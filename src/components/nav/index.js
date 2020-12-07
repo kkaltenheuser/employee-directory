@@ -12,5 +12,5 @@ const Nav =() => {
     </nav>
   );
 }
-
+// export
 export default Nav;

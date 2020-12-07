@@ -6,9 +6,10 @@ import EmployeeTable from "./components/EmployeeTable";
 import SearchForm from "./components/SearchForm/SearchForm";
 import axios from "axios";
 import SortButtons from "./components/SortButtons/SortButtons";
+
 // set all variables for app
 function App() {
-  const [search, setSearch] = useState("");
+  //const [search, setSearch] = useState("");
 
   const [users, setUsers] = useState([]);
   const [filteredUsers, setFilteredUsers] = useState(null);
