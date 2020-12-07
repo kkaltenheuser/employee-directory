@@ -15,6 +15,7 @@ const SortButtons = (props) => {
         // return b.props.user.name.last - a.props.user.name.last;
     //   ); 
 
+// on click return series
 return(
     <div>
     <Button variant="success" onClick={()=>{
