@@ -1,7 +1,7 @@
 // import all dependencies + route files
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Nav from "./components/Nav";
+import Nav from "./components/nav";
 import EmployeeTable from "./components/EmployeeTable";
 import SearchForm from "./components/SearchForm/SearchForm";
 import axios from "axios";
