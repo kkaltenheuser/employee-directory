@@ -14,7 +14,7 @@ const SearchForm = (props) => {
           list="term"
           type="text"
           className="form-control"
-          placeholder="Type the name of the employee you are seeking to search directory"
+          placeholder="Type the name of the employee you are seeking to search within the directory"
           id="term"
         />
       </div>
